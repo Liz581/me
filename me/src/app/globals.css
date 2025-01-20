@@ -3,14 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0D1B2A;
+  --foreground: #0D1B2A;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0D1B2A;
+    --foreground: #0D1B2A;
   }
 }
 
@@ -18,4 +18,85 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+  padding: 50px 20px;
+  min-height: 100vh; /* Full viewport height */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+p {
+  color: #E0E1DD;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 5px;
+}
+
+nav a:hover {
+  background-color: #38A3A5;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+
+.content {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.front-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  background-color: #0D1B2A; /* Change to your preferred background color */
+}
+
+.image {
+  border-radius: 35px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.name {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #57CC99; /* Adjust color as needed */
+}
+
+.profession {
+  font-size: 1.2rem;
+  color: #38A3A5; /* Adjust color as needed */
+}
+
+.title {
+  color: #57CC99;
 }
