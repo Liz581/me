@@ -20,12 +20,18 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* General styles for other sections */
 section {
   padding: 50px 20px;
   min-height: 100vh; /* Full viewport height */
-  justify-content: center;
-  align-items: center;
   display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: flex-start; /* Push content down to allow title at the top */
+}
+
+h3 {
+  color: #38A3A5;
 }
 
 p {
@@ -64,7 +70,7 @@ nav a:hover {
   border-radius: 5px;
 }
 
-
+/* Keep the current settings for the intro section */
 .content {
   text-align: center;
   display: flex;
@@ -72,6 +78,7 @@ nav a:hover {
   align-items: center;
 }
 
+/* Style for the front-page content (intro) */
 .front-page {
   display: flex;
   justify-content: center;
@@ -93,10 +100,102 @@ nav a:hover {
 }
 
 .profession {
-  font-size: 1.2rem;
+  font-size: 34px;
   color: #38A3A5; /* Adjust color as needed */
 }
 
 .title {
   color: #57CC99;
+  font-size: 34px;
+  font-weight: bolder;
+}
+
+.icons {
+  display: flex;
+  gap: 20px; /* Space between icons */
+  margin-top: 20px;
+}
+
+.position {
+  color: #C7F9CC;
+  font-weight: bold;
+  text-align: left;
+}
+
+.dates {
+  color: #57CC99;
+  text-align: left;
+}
+
+.description {
+  text-align: left;
+}
+
+.footers {
+  color: #57CC99;
+  font-size: 34px;
+  font-weight: bolder;
+}
+
+
+/* Center content within sections */
+.experience-container,
+.projects-container,
+.leadership-container,
+.awards-container,
+.skills-container {
+  width: 100%;
+  max-width: 1200px; /* Prevent content from becoming too wide */
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap; /* Allow wrapping if content is too wide */
+  margin-top: 30px; /* Space between the section title and content */
+  justify-content: flex-start; /* Start from the top for content */
+}
+
+/* Section-specific rules for experience items, projects, etc. */
+.experience-list, .projects-list, .leadership-list {
+  flex: 1;
+  list-style-type: none;
+  padding: 0;
+  color: #38A3A5;
+  font-weight: bold;
+  text-align: right;
+}
+
+.experience-item, .project-item, .leadership-item {
+  cursor: pointer;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.experience-item:hover {
+  background-color: #e0e0e0;
+  color: #0D1B2A;
+}
+
+.experience-item.active {
+  background-color: #d0d0d0;
+  color: #0D1B2A;
+  font-weight: bold;
+}
+
+/* Styling for the experience details section */
+.experience-details {
+  flex: 2;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.details-content h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.details-content p {
+  margin-top: 5px;
 }
