@@ -88,7 +88,6 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   text-align: left;
-  background-color: #0D1B2A; /* Change to your preferred background color */
 }
 
 .image {
@@ -185,7 +184,6 @@ nav a:hover {
 
 /* Center content within sections */
 .experience-container,
-.projects-container,
 .leadership-container,
 .awards-container,
 .skills-container {
@@ -200,7 +198,7 @@ nav a:hover {
 }
 
 /* Section-specific rules for experience items, projects, etc. */
-.experience-list, .projects-list, .leadership-list {
+.experience-list, .leadership-list {
   flex: 1;
   list-style-type: none;
   padding: 0;
@@ -209,7 +207,7 @@ nav a:hover {
   text-align: right;
 }
 
-.experience-item, .project-item, .leadership-item {
+.experience-item, .leadership-item {
   cursor: pointer;
   padding: 10px;
   margin: 5px 0;
@@ -244,3 +242,111 @@ nav a:hover {
 .details-content p {
   margin-top: 5px;
 }
+
+
+/* Project Section Styling */
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;         /* Allow items to wrap onto the next line */
+  gap: 20px;               /* Space between cards */
+  justify-content: center; /* Center items horizontally */
+  align-items: center;     /* Center items vertically if needed */
+  margin-top: 20px;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;         /* Allow items to wrap */
+  gap: 20px;               /* Space between cards */
+  justify-content: center; /* Center items within the list */
+  width: 100%;             /* Ensure full width of the container */
+}
+
+.project-item {
+  border-radius: 15px;
+  border-color: #57CC99;
+  border-width: 4px;
+  width: 300px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 2px 10px #57cc994f;
+}
+
+.project-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #38A3A5;
+}
+
+.project-tech {
+  font-size: 1rem;
+  color: #adadad;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.project-members {
+  font-size: 0.9rem;
+  color: #a0a0a0;
+}
+
+.project-website a {
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.project-website a:hover {
+  text-decoration: underline;
+}
+
+
+/* Skills Section styling */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;         /* Allow items to wrap */
+  gap: 20px;               /* Space between cards */
+  justify-content: center; /* Center items within the list */
+  width: 100%;             /* Ensure full width of the container */
+}
+
+.skills-boxes {
+  display: flex;
+  flex-wrap: wrap;         /* Allow items to wrap onto the next line */
+  gap: 20px;               /* Space between cards */
+  justify-content: center; /* Center items horizontally */
+  align-items: center;     /* Center items vertically if needed */
+  margin-top: 20px;
+}
+
+.skills-section {
+  border-color: #57CC99;
+  border-width: 4px;
+  border-radius: 15px; /* Rounded corners */
+  padding: 20px;
+  width: 225px;
+  box-shadow: 0 2px 10px #57cc9927; /* Slight shadow for depth */
+}
+
+.skills-section h2 {
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color:#38A3A5
+}
+
+.skills-section p {
+  margin: 5px 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+

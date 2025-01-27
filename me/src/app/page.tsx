@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from 'next/link';
 import { groupedExperiences } from "./experiences";
 import { groupedLeaderships } from "./leadership";
-// import { projects } from "./projects";
+import { projects } from "./projects";
 import { FaLinkedin, FaGithubSquare } from 'react-icons/fa';
 import { SiCalendly } from "react-icons/si";
 import { MdEmail } from "react-icons/md";
@@ -64,7 +64,7 @@ export default function Home() {
             className="image"
           />
           <div>
-            <h1 className="name">Hi! I&apos;m Lisset C. Rico</h1>
+            <h1 className="name">Hi! I&apos;m Lisset Rico</h1>
             <h2 className="profession">Latina in Tech</h2>
             <div className="icons">
               <a href="https://github.com/Liz581" target="_blank" rel="noopener noreferrer">
@@ -73,7 +73,7 @@ export default function Home() {
               <a href="https://www.linkedin.com/in/lisset-c-rico-85aa91210/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin size={40} color="#778DA9" />
               </a>
-              <a href="https://calendly.com/lissetcrico/30min" target="_blank" rel="noopener noreferrer">
+              <a href="https://calendly.com/lissetcrico" target="_blank" rel="noopener noreferrer">
                 <SiCalendly size={38} color="#778DA9" />
               </a>
               <a href={`mailto:${email}`} className="email-link">
@@ -97,7 +97,7 @@ export default function Home() {
               layout="intrinsic"
               objectFit="cover"
             />
-            <div className="image-description">snow day of my last semester at UIC</div>
+            <div className="image-description">a snow day of my last semester at UIC</div>
           </div>
           <div className="image-wrapper">
             <Image
@@ -115,31 +115,31 @@ export default function Home() {
           <div className="text-column">
             <h1 className="title">about me</h1>
             <p>
-              I&apos;m Lisset, a Software Engineer from Chicago, IL. 
-              I graduated from the <b>University of Illinois at Chicago</b> with my <b>Bachelor&apos;s in Science of Computer Science</b> in Fall 2024.
+              I&apos;m Lisset, a latina from Illinois. 
+              I graduated from the <b>University of Illinois at Chicago</b> with my <b>Bachelor&apos;s of Science in Computer Science</b> in Fall 2024.
             </p>
             <p>
-              I first learned about coding in the AP Computer Science A course offered at my high school my sophomore year. 
-              I had always been interested in creating my own game since I was little but didn&apos;t know it was called programming.
-              From then on, I couldn&apos;t get coding out of my head.
+              I first learned about coding in the AP Computer Science A course offered at my high school my sophomore year.
+              I grew up in the suburbs of Illinois away from the tech scene in Chicago so this was my only peek into this possible future for myself.
+              What sparked my interest was playing Super Mario 64 and Crash Bandicoot when I was little. I asked my family how games were made and would search for answers with little luck due to not knowing the right terms. 
+              That class brought a lot into full circle and from then on it stuck with me.
             </p>
             <p>
-              Random thought: In the picture of myself at the top of the page, the building that&apos;s behind me is the Google Office in Shibuya, Japan. 
-              I didn&apos;t realize it until my mom told me to turn around and read the name of the building.
+              
             </p>
           </div>
 
           <div className="image-column">
             <div className="image-wrapper">
               <Image
-                src="/tokyo_skytree.jpg"
+                src="/btt_celebration_photo.jpg"
                 alt="Image 2"
                 width={300}
                 height={300}
                 layout="intrinsic"
                 objectFit="cover"
               />
-              <div className="image-description">at the Tokyo Skytree in Japan</div>
+              <div className="image-description">attending the BTTC celebration event</div>
             </div>
             <div className="image-wrapper">
               <Image
@@ -197,9 +197,28 @@ export default function Home() {
 
       <section id="projects" className="content">
         <h1 className="title">projects</h1>
+        
         <div className="projects-container">
           <div className="projects-list">
-            {/* Map through projects and display them here */}
+            {projects.map((project, index) => (
+              <a 
+                key={index} 
+                href={project.website || '#'} 
+                className="project-item" 
+                target={project.website ? "_blank" : ""} 
+                rel="noopener noreferrer"
+              >
+                <h2 className="project-title">{project.title}</h2>
+                
+                {project.description && (
+                  <p className="project-description">{project.description}</p>
+                )}
+                <p className="project-tech">{project.tech}</p>
+                {project.members && (
+                  <p className="project-members">Team: {project.members}</p>
+                )}
+              </a>
+            ))}
           </div>
         </div>
       </section>
@@ -247,37 +266,44 @@ export default function Home() {
         <h1 className="title">awards</h1>
       </section> */}
 
-      <section id="skills" className="content">
+      <section id="skills" className="content skills-boxes">
         <h1 className="title">skills</h1>
-        <div>
-          <p>Python</p>
-          <p>SQL</p>
-          <p>C#</p>
-          <p>C++</p>
-          <p>C</p>
-          <p>React.js</p>
-          <p>HTML/CSS</p>
-          <p>JavaScript</p>
-        </div>
 
-        <div>
-          <p>VS Code</p>
-          <p>Git</p>
-          <p>Arduino</p>
-        </div>
+        <div className="skills-list">
+          <div className="skills-section technical">
+            <h2>Programming Languages</h2>
+            <p>Python</p>
+            <p>SQL</p>
+            <p>C#</p>
+            <p>C++</p>
+            <p>C</p>
+            <p>React.js</p>
+            <p>HTML/CSS</p>
+            <p>JavaScript</p>
+          </div>
 
-        <div>
-          <p>GitHub</p>
-          <p>FastAPI</p>
-          <p>NI-MAX</p>
-          <p>PM40</p>
-          <p>Postman</p>
-        </div>
+          <div className="skills-section developer-tools">
+            <h2>Developer Tools</h2>
+            <p>VS Code</p>
+            <p>Git</p>
+            <p>Arduino</p>
+          </div>
 
-        <div>
-          <p>English - Native</p>
-          <p>Japanese - Beginner</p>
-          <p>Spanish - Native</p>
+          <div className="skills-section frameworks">
+            <h2>Frameworks</h2>
+            <p>GitHub</p>
+            <p>FastAPI</p>
+            <p>NI-MAX</p>
+            <p>PM40</p>
+            <p>Postman</p>
+          </div>
+
+          <div className="skills-section languages">
+            <h2>Spoken Languages</h2>
+            <p>English - Native</p>
+            <p>Spanish - Native</p>
+            <p>Japanese - Beginner</p>
+          </div>
         </div>
       </section>
 

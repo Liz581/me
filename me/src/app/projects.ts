@@ -2,18 +2,18 @@ export const projects = [
     {
         title: "Personal Website",
         tech: "Next.js, React, Vercel",
-        website: "https://github.com/Liz581/From-the-Shadows",
+        website: "https://github.com/Liz581/me",
         description: 
-            "My personal website.",
+            "My personal website. It is what you are on right at this moment.",
         members: ""
 
     },
     {
         title: "From the Shadows",
         tech: "C#, GitHub, Unity, Blender",
-        website: "",
+        website: "https://github.com/Liz581/From-the-Shadows",
         description: 
-            "From The Shadows is a game where the player takes control of a shinobi on a revenge mission. When infiltrating, the player must maintain stealth but can use the shadows to their advantage. This is a single player game.",
+            "A single-player game where the player takes control of a shinobi on a revenge mission. When infiltrating, the player must maintain stealth but can use the shadows to their advantage.",
         members: "Jamil Salman, Ethan Pekkarinen"
     },
     {
@@ -21,23 +21,23 @@ export const projects = [
         tech: "React.js, Python, FastAPI, SQL, GitHub",
         website: "",
         description:
-            "",
+            "Developed a full-stack website monitoring program that uses API calls every 10 minutes to gather data about website conditions.",
         members: ""
     },
     {
         title: "Ball Obstacle Course",
         tech: "HTML, JavaScript, CSS, GitHub",
-        website: "",
+        website: "https://github.com/Liz581/Ball-Obstacle-Course",
         description: 
-            "",
+            "A obstacle-course game where the player tried to survive as long as possible while avoiding obstacles and collecting points.",
         members: ""
     },
     {
         title: "Bitcoin Tracker",
         tech: "Python, SQL, React.js, FastAPI, GitHub",
-        website: "",
+        website: "https://github.com/Liz581/Bitcoin-Tracker",
         description:
-            "",
+            "Built a tracker that displays the current bitcoin value in USD/JPY currency with automatic updates every 10 minutes.",
         members: ""
     }
 ];

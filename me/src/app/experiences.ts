@@ -103,6 +103,7 @@ export const experiences = [
         dates: "January 2022 - April 2022",
         description: [
             "• Led 200+ students through weekly labs for the course CS141: Program Design II.",
+            "• Provided 10+hrs weekly of office hours giving students 1 to 1 meetings and study/support sessions."
         ],
     },
     {
