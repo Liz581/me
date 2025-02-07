@@ -17,7 +17,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Quicksand, serif;
 }
 
 /* General styles for other sections */
@@ -103,7 +103,8 @@ nav a:hover {
 }
 
 .profession {
-  font-size: 34px;
+  font-size: 30px;
+  font-weight: bold;
   color: #38A3A5; /* Adjust color as needed */
 }
 
@@ -216,13 +217,16 @@ nav a:hover {
 }
 
 .experience-item:hover, .leadership-item:hover {
-  background-color: #e0e0e0;
-  color: #0D1B2A;
+  color: #57CC99;
+  text-shadow: 0px 4px 6px #57cc9983;
 }
 
 .experience-item.active, .leadership-item.active {
-  background-color: #d0d0d0;
-  color: #0D1B2A;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+  color: #57CC99;
+  text-shadow: 0px 4px 6px #57cc9983;
   font-weight: bold;
 }
 

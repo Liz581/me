@@ -78,7 +78,6 @@ export default function Home() {
               </a>
               <a href={`mailto:${email}`} className="email-link">
                 <MdEmail size={40} color="#778DA9" />
-                <span className="email-text">{email}</span>
               </a>
             </div>
           </div>
