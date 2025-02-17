@@ -31,7 +31,7 @@ export const projects = [
         website: "",
         description:
             "Developed a full-stack website monitoring program that uses API calls every 10 minutes to gather data about website conditions.",
-        members: "Myself :)"
+        members: "Danielle Siazon, Jocellyn Aurellia, Sarvani Kunapareddy, Neksha Patel"
     },
     {
         title: "Ball Obstacle Course",
