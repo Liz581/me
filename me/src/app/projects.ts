@@ -5,7 +5,16 @@ export const projects = [
         website: "https://github.com/Liz581/me",
         description: 
             "My personal website. It is what you are on right at this moment.",
-        members: ""
+        members: "Myself :)"
+
+    },
+    {
+        title: "Game Bytes",
+        tech: "Astro, React, Vercel, GitHub",
+        website: "https://github.com/Liz581/Game-Bytess",
+        description: 
+            "A website that provides real-life recipes inspired by food seen in video games. Users can explore the recipes and submit their own versions of the recipe as 'remixes'.",
+        members: "Myself :)"
 
     },
     {
@@ -22,7 +31,7 @@ export const projects = [
         website: "",
         description:
             "Developed a full-stack website monitoring program that uses API calls every 10 minutes to gather data about website conditions.",
-        members: ""
+        members: "Myself :)"
     },
     {
         title: "Ball Obstacle Course",
@@ -30,7 +39,7 @@ export const projects = [
         website: "https://github.com/Liz581/Ball-Obstacle-Course",
         description: 
             "A obstacle-course game where the player tried to survive as long as possible while avoiding obstacles and collecting points.",
-        members: ""
+        members: "Myself :)"
     },
     {
         title: "Bitcoin Tracker",
@@ -38,6 +47,6 @@ export const projects = [
         website: "https://github.com/Liz581/Bitcoin-Tracker",
         description:
             "Built a tracker that displays the current bitcoin value in USD/JPY currency with automatic updates every 10 minutes.",
-        members: ""
+        members: "Myself :)"
     }
 ];

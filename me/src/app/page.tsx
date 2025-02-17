@@ -142,14 +142,14 @@ export default function Home() {
             </div>
             <div className="image-wrapper">
               <Image
-                src="/tokyo_disney_sea_arms_up.jpg"
+                src="/sparkhacks_2025.jpg"
                 alt="Image 2"
                 width={300}
                 height={300}
                 layout="intrinsic"
                 objectFit="cover"
               />
-              <div className="image-description">first time at Tokyo Disney Sea</div>
+              <div className="image-description">mentoring at SparkHacks 2025</div>
             </div>
           </div>
         </div>
@@ -270,31 +270,37 @@ export default function Home() {
 
         <div className="skills-list">
           <div className="skills-section technical">
-            <h2>Programming Languages</h2>
+            <h2>Programming & Scripting</h2>
             <p>Python</p>
             <p>SQL</p>
             <p>C#</p>
             <p>C++</p>
             <p>C</p>
             <p>React.js</p>
+            <p>Next.js</p>
+            <p>Astro</p>
             <p>HTML/CSS</p>
             <p>JavaScript</p>
           </div>
 
           <div className="skills-section developer-tools">
-            <h2>Developer Tools</h2>
+            <h2>Development Tools</h2>
             <p>VS Code</p>
+            <p>Unity</p>
             <p>Git</p>
+            <p>GitHub</p>
             <p>Arduino</p>
           </div>
 
           <div className="skills-section frameworks">
-            <h2>Frameworks</h2>
-            <p>GitHub</p>
+            <h2>Frameworks & Platforms</h2>
+            <p>Firebase</p>
             <p>FastAPI</p>
+            <p>Vercel</p>
+            <p>Windows</p>
+            <p>Postman</p>
             <p>NI-MAX</p>
             <p>PM40</p>
-            <p>Postman</p>
           </div>
 
           <div className="skills-section languages">

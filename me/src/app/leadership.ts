@@ -11,6 +11,7 @@ const leaderships = [
         organization: "Society of Hispanic Professional Engineers @ UIC",
         dates: "October 2024 - December 2024",
         description: [
+            "• Participated in a high school information session as a panelist, providing insights into SHPE/UIC and answering student questions.",
             "• Contributed to organizing events and initiatives fostering community engagement and promoting STEM opportunities."
         ]
     },
